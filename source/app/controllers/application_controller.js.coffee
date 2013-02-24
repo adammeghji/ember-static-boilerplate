@@ -1,1 +1,1 @@
-App.ApplicationController = Ember.Controller.extend()
+PostsApp.ApplicationController = Ember.Controller.extend()

@@ -1,3 +1,3 @@
-App.PostsController = Ember.Controller.extend()
+PostsApp.PostsController = Ember.Controller.extend()
 
-App.PostsIndexController = Ember.ArrayController.extend()
+PostsApp.PostsIndexController = Ember.ArrayController.extend()

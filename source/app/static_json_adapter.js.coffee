@@ -1,7 +1,7 @@
 #
 # Loads all content from static JSON array, and can do simple finds against it.
 #
-App.StaticJSONAdapter = DS.Adapter.extend
+PostsApp.StaticJSONAdapter = DS.Adapter.extend
 
   serializer: DS.JSONSerializer.extend()
 

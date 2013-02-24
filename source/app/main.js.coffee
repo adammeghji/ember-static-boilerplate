@@ -7,7 +7,7 @@
 #= require      ./routes
 #= require      ./static_json_adapter
 
-window.A = window.App = Ember.Application.create
+window.A = window.PostsApp = Ember.Application.create
   Store: DS.Store.extend
     revision: 11
-    adapter: 'App.StaticJSONAdapter'
+    adapter: 'PostsApp.StaticJSONAdapter'

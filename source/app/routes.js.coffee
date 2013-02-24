@@ -1,9 +1,9 @@
-App.Router = Ember.Router.extend
+PostsApp.Router = Ember.Router.extend
   enableLogging: true
 
   # location: 'history' # /posts instead of /#/posts
 
-App.Router.map ->
+PostsApp.Router.map ->
   @resource "posts", ->
     @route "index",
     @route "show"

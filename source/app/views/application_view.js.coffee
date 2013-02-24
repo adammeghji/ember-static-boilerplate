@@ -1,2 +1,2 @@
-App.ApplicationView = Ember.View.extend
+PostsApp.ApplicationView = Ember.View.extend
   templateName: "application"

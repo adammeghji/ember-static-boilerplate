@@ -1,2 +1,2 @@
-App.IndexController = Ember.Controller.extend()
+PostsApp.IndexController = Ember.Controller.extend()
 
