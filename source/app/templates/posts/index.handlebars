@@ -1,0 +1,15 @@
+<h1>All Posts</h1>
+
+<table class="table table-condensed table-striped">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+  </tr>
+
+{{#each post in posts}}
+  <tr>
+    <td>{{#linkTo posts.show post}}{{post.id}}{{/linkTo}}</td>
+    <td>{{post.title}}</td>
+  </tr>
+{{/each}}
+</table>
