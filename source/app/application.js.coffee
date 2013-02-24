@@ -6,4 +6,3 @@
 #= require ./main
 
 App.initialize()
-App.store = App.router.get("store")
