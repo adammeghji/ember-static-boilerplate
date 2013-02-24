@@ -1,6 +1,8 @@
 require "bundler/setup"
 Bundler.require
 
+require 'bootstrap-sass'
+
 ###
 # Compass
 ###
