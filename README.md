@@ -1,57 +1,54 @@
-example-ember-with-middleman, Write Ember.js App With Middleman
-=================================================================
+ember-static-boilerplate
+========================
 
-This is part of [Write Ember.js App With Middleman Tutorial](https://gist.github.com/4364010). Check out [Live Demo](http://gutenye.github.com/example-ember-with-middleman)
+A super simple starting point for new Ember.js applications.  This project provides a fully working configuration for:
 
-* Use `bower` to manage brower packages.
-* Use `sprockets` to manage javascript assets. 
-* Use `sass` to manage css assets.
-* Use `sprockets-handlebars_template` to compile handlebars.
+* Ember.js v1.0.0-pre4
+* Ember Data c520858 (2013-02-23 09:46:03 -0800)
+* Twitter Bootstrap v2.3.0.1 (responsive enabled)
+* S3 static site hosting
+* Deployment automation via Capistrano
 
-**Source Code Layout**
+## Sample Data
 
-	source/
-		index.html
-		stylesheets/
-		images/
-		app/
-			main.js
-			routes.js
-			controllers/  foo_controller.js
-			views/        foo_view.js
-			templates/    foo.handlebars
-			models/       foo.js
-	vendor/
-		javascripts/
-		stylesheets/
+The project includes a sample Ember.js + Ember Data app for "posts":
 
-**Development**
+* Sample static JSON at /posts.json
+* Basic /posts and /posts/:post_id routes, controllers, views, and templates.
+* A "Posts" Ember Data model
+* StaticJSONAdapter datastore, which loads content from /posts.json, and does individual :id lookups against it.
 
-	$ bundle install
-	$ bower install
-	$ rake server
-	
-**Build The Site**
+## Installation
 
-	$ rake build
+* configure config/deploy.rb with your S3 static website bucket & API keys
+* rename "PostsApp" to your Ember app's namespace
+* rename "Project Name", title tag, etc.
+* customize Twitter Bootstrap in theme.css.sass
+* replace StaticJSONAdapter with the RESTAdapter + API if applicable
 
-**Deploy To Github Pages**
+## Usage
 
-	$ rake deploy
+### Build Static Assets
 
-**Resources**
+    $ rake build
 
-* [ember.js](http://www.emberjs.com/): A JavaScript framework for creating ambitious web applications 
-* [bower](http://twitter.github.com/bower/): A package manager for the web  
-* [middleman](http://middlemanapp.com/): Hand-crafted frontend development 
-* [sprockets-handlebars_template](https://github.com/GutenYe/sprockets-handlebars_template): a handlebars template for sprockets 
-* [middleman-ember-template](https://github.com/GutenYe/middleman-ember-template): A middleman template for developping ember.js app
+### Build & Deploy to S3
 
-**Copyright**
+    $ rake deploy
+
+### Deploy to S3 only
+
+    $ cap deploy
+
+## Credits
+
+This project was forked from GutenYe's excellent [example-ember-with-middleman](https://github.com/GutenYe/example-ember-with-middleman), which provided the basis for Middleman, Sprockets, and some Ember.js boilerplate.
+
+## Copyright
 
 (the MIT License)
 
-Copyright (c) 2012 Guten
+Copyright (c) 2013 Adam Meghji
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
