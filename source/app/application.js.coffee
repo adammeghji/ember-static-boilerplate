@@ -5,5 +5,3 @@
 #= require ember
 #= require ember-data
 #= require ./main
-
-PostsApp.initialize()
