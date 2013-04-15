@@ -3,9 +3,10 @@ ember-static-boilerplate
 
 A super simple starting point for new Ember.js applications.  This project provides a fully working configuration for:
 
-* Ember.js v1.0.0-pre4
-* Ember Data c520858 (2013-02-23 09:46:03 -0800)
+* Ember.js v1.0.0-rc.1-247-g9e5ec3b
+* Ember Data 9d6686c (2013-03-22 19:26:49 -0700)
 * Twitter Bootstrap v2.3.0.1 (responsive enabled)
+* jQuery 1.9.1
 * S3 static site hosting
 * Deployment automation via Capistrano
 
