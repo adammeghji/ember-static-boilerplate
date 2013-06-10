@@ -1,11 +1,19 @@
+GIT
+  remote: git://github.com/jdjkelly/sprockets-handlebars_template.git
+  revision: 39c20afd29bf9972a8e317464fa1b377dd4a8834
+  specs:
+    sprockets-handlebars_template (1.0.0)
+      barber
+      sprockets
+
 GEM
   remote: https://rubygems.org/
   specs:
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    barber (0.4.1)
-      ember-source
+    barber (0.4.0)
+      ember-template-compiler-source
       execjs
       handlebars-source
     bootstrap-sass (2.3.0.1)
@@ -25,7 +33,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    ember-source (1.0.0.pre4.1)
+    ember-template-compiler-source (1.0.0.pre4.4)
       handlebars-source (>= 1.0.0.rc2)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -73,7 +81,7 @@ GEM
       middleman-more (>= 3.0.1)
       sprockets (~> 2.1, < 2.5)
       sprockets-sass (~> 0.9.0)
-    multi_json (1.6.1)
+    multi_json (1.7.6)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.1)
@@ -108,9 +116,6 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-handlebars_template (1.0.0)
-      barber
-      sprockets
     sprockets-sass (0.9.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
@@ -130,4 +135,4 @@ DEPENDENCIES
   bootstrap-sass
   capistrano
   middleman (~> 3.0.7)
-  sprockets-handlebars_template
+  sprockets-handlebars_template!
