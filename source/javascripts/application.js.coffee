@@ -4,4 +4,4 @@
 #= require handlebars
 #= require ember
 #= require ember-data
-#= require ./main
+#= require ./app/main

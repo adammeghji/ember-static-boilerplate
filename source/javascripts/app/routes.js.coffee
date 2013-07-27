@@ -5,7 +5,6 @@ PostsApp.Router = Ember.Router.extend
 
 PostsApp.Router.map ->
   @resource "posts", ->
-    @route "index",
     @route "show"
       path: "/:post_id"
 

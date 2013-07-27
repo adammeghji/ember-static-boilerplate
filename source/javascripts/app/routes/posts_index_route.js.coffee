@@ -1,2 +1,3 @@
 PostsApp.PostsIndexRoute = Ember.Route.extend
-  model: -> PostsApp.Post.find()
+  model: ->
+    PostsApp.Post.find()
