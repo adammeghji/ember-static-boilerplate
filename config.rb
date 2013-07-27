@@ -1,6 +1,10 @@
 require "bundler/setup"
 Bundler.require
 
+MiddlemanEmber::HandlebarsTemplate.options = {
+  template_path: "app/templates"
+}
+
 set :css_dir, "stylesheets"
 set :js_dir, "app"
 set :images_dir, "images"
