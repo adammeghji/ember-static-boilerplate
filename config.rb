@@ -1,22 +1,35 @@
-require "bundler/setup"
-Bundler.require
-
 MiddlemanEmber::HandlebarsTemplate.options = {
   template_path: "app/templates"
 }
 
-set :css_dir, "stylesheets"
-set :js_dir, "app"
-set :images_dir, "images"
-set :layout, nil
-set :js_assets_paths, ["#{root}/vendor/javascripts/"]
-set :css_assets_paths, ["#{root}/vendor/stylesheets/"]
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
+
+  # For example, change the Compass output style for deployment
   activate :minify_css
+
+  # Minify Javascript on build
   activate :minify_javascript
 
-  # Enable asset_hash
+  # Enable cache buster
+  # activate :cache_buster
+
   activate :asset_hash
+
+  # Use relative URLs
+  activate :relative_assets
+
+  # Compress PNGs after build
+  # First: gem install middleman-smusher
+  # require "middleman-smusher"
+  # activate :smusher
+
+  # Or use a different image path
+  # set :http_path, "/Content/images/"
 end
